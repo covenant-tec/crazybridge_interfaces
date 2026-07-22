@@ -14,6 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/Takeoff.srv
   srv/Land.srv
   srv/GoTo.srv
+  srv/Spiral.srv
   DEPENDENCIES builtin_interfaces geometry_msgs
 )
 
