@@ -11,10 +11,13 @@ find_package(builtin_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  msg/TrajectoryPolynomialPiece.msg
   srv/Takeoff.srv
   srv/Land.srv
   srv/GoTo.srv
   srv/Spiral.srv
+  srv/UploadTrajectory.srv
+  srv/StartTrajectory.srv
   DEPENDENCIES builtin_interfaces geometry_msgs
 )
 
